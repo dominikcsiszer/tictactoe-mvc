@@ -4,8 +4,12 @@ class Controller {
     constructor() {
         // View példányosítása
         for (let i = 0; i < 9; i++) {
-            new Elem()
+            new Elem(i, false)
         }
+
+        $(window).on('clickElem', () => {
+            
+        })
     }
 }
 
