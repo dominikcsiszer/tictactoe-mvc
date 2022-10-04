@@ -11,11 +11,11 @@ class Model {
     }
 
     getKovetkezo() {
-        let kovetkezoJatekos = "X"
+        let kovetkezoJatekos = "O"
         if(this.#lepesSzam < 8) {
             this.#lepesSzam++
             if (!(this.#lepesSzam % 2 == 0))
-                kovetkezoJatekos = "O"
+                kovetkezoJatekos = "X"
         } else
             console.log("Vége a játéknak!")
 
