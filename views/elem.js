@@ -22,6 +22,13 @@ class Elem {
     setErtek(jel) {
         this.pElem.html(jel)
     }
+    setAllapot() {
+        if(!this.#allapot)
+            this.#allapot = !this.#allapot
+    }
+    getAllapot() {
+        return this.#allapot
+    }
 
     kattintas() {
         let clickEvent = new CustomEvent("clickElem",{detail:this.#index})

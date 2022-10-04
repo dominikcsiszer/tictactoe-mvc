@@ -12,14 +12,24 @@ class Model {
 
     getKovetkezo() {
         let kovetkezoJatekos = "O"
-        if(this.#lepesSzam < 8) {
+        if(this.#lepesSzam < 8 && this.vanNyertes()) {
             this.#lepesSzam++
             if (!(this.#lepesSzam % 2 == 0))
                 kovetkezoJatekos = "X"
-        } else
-            console.log("Vége a játéknak!")
+        } else 
+            console.log("Vége a játéknak! De nincs nyertes")
 
         return kovetkezoJatekos
+    }
+
+    vanNyertes() {
+        
+
+        return true
+    }
+
+    getNyertes() {
+        
     }
 }
 
