@@ -14,7 +14,7 @@ class Elem {
 
         this.divElem.on('click', () => {
             // Teszt a setErteket Controller fogja megmondani, model dönti el
-            this.setErtek("X")
+            // this.setErtek("X")
             this.kattintas()
         })
     }

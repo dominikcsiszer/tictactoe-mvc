@@ -7,8 +7,8 @@ class Controller {
             new Elem(i, false)
         }
 
-        $(window).on('clickElem', () => {
-            
+        $(window).on('clickElem', (e) => {
+            console.log(e.detail)
         })
     }
 }
